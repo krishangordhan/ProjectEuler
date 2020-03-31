@@ -2,6 +2,6 @@ package app;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println(SumSquare.calculate(100));
+        System.out.println(PrimeNumbers.calculate(10001));
     }
 }

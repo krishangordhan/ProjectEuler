@@ -3,6 +3,10 @@ package app;
 
 public class PalindromeProduct {
 
+    /**
+     * Loops through all integers that are 3 digits, starting with big to small, and compares it to the current biggest one replaces if need be, It looks only for palindromes
+     * @return The biggest integer that is a palindrome.
+     */
     public static int palindromeBiggest() {
         int biggest = 0;
         int current = 0;
@@ -22,10 +26,13 @@ public class PalindromeProduct {
     }
 
 
-
+    /**
+     * It isn't the best palindrome checked but if the string is odd length, then remove the middle character, and then use StringBuffer to compare it to the reverse
+     * @param s String to check if palindrome
+     * @return True if string is palindrome
+     */
     public static boolean isPalindrome( String s )
     {
-        //if odd length then remove middle character
         if ( s.length() % 2 != 0 )
         {
             s = s.substring( 0, s.length() / 2 ) + s.substring( (s.length() / 2) + 1);

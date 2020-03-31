@@ -2,7 +2,10 @@ package app;
 
 public class SmallestMultiple{
 
-
+    /**
+     * Not the most elegant solution but returns the smallest number that is a multile of all numbers from 1-20, but if I just use the values 10-20 it should cover all 1-10.
+     * @return The number that is the smallest integer of the multiples.
+     */
     public static int smallestMultiple(){
         for (int i = 2520; i< Integer.MAX_VALUE; i = i + 20){
             if (i%10 == 0 &&
