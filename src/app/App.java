@@ -2,6 +2,6 @@ package app;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println(PythagoreanTriplet.calculate(1000));
+        System.out.println(SummationOfPrimes.calculate(2000000));
     }
 }
